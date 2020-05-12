@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    border: 2px double slateblue;
+    border-radius: 7.5%;
+    margin: 15px 0;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+p {
+    width: 66%;
+    font-size: .9em;
+    color: rgba(0,0,0,.6);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img {
+    margin: 10px;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        flex-direction: column;
+    }
+
+    .description {
+        align-self: center;
+    }
+
+    img {
+        width: 40%;
+    }
+}
