@@ -44,6 +44,7 @@ img {
 
     .description {
         align-self: center;
+        width: 100%;
     }
 
     img {
